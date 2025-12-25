@@ -83,7 +83,8 @@ app.delete('/api/notes/:id', async (req, res) => {
 // --- SERVING FRONTEND (BASED ON YOUR FOLDERS) ---
 
 // This path points to: Fronted -> user-form-app -> build
-const buildPath = path.resolve();
+const buildPath = 
+path.join(__dirname, "../build");
 app.use(express.static(buildPath));
 
 // Serve index.html for any request that doesn't match an API route
