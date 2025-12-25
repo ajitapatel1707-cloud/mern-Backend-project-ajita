@@ -13,7 +13,7 @@ app.use(express.json());
 
 // --- MONGODB CONNECTION ---
 // IMPORTANT: Replace <db_password> with your actual password
-const MONGO_URI = "mongodb+srv://ajitapatel1707_db_user:ajita2006@cluster0studentmanagerd.ylkyuce.mongodb.net/notesDB?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://ajitapatel1707_db_user:ajita2006@cluster0studentmanagerd.y1kyuce.mongodb.net/?appName=Cluster0studentmanagerdb";
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log('MongoDB Atlas Connected... ✅'))
@@ -94,4 +94,5 @@ app.get("*", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
 });
